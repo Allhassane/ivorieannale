@@ -1,0 +1,1397 @@
+/*
+ * Title:   EDUCA | Multiconcept Education & Courses HTML Template
+ * Author: jrbthemes
+ */
+ 
+/**  
+  1. Row
+  2. Button
+  3. Educa divider
+  4. Transition
+  5. Educa-title
+  6. Educa-iconbox
+  7. Educa-Testimonations
+  8. Educa-Counter
+  9. Form Search Course
+  10. Form register
+  11. Infobox Maps
+  12. Section Create account
+  13. Form Subscribe
+  14. CountDown
+  15. Educa accordion
+  16. Educa Testimonial
+  17. team-member
+  18. Educa client
+  19. Educa-Preloader
+**/  
+
+/* Row
+-----------------------------------------------------------*/
+.educa-row {
+    clear: both;
+    display: block;
+    position: relative;
+    padding: 100px 0;    
+}
+
+.educa-row.section-testimonation { padding: 91px 0 86px; }
+.educa-row.section-iconbox { padding: 80px 0px 100px; }
+.educa-row.v1 { padding: 92px 0px 14px; }
+.educa-row.v2 { padding: 140px 0px 82px; }
+.educa-row.v3 { padding: 80px 0px 74px; }
+.educa-row.v4 { padding: 89px 0px 80px; }
+.educa-row.v5 { padding: 92px 0px 80px; }
+.educa-row.v6 { padding: 89px 0px 100px; }
+.educa-row.v7 { padding: 86px 0px 96px; }
+.educa-row.v8 { padding: 85px 0px 50px; }
+.educa-row.v9 { padding: 167px 0px 101px; }
+.educa-row.v10 { padding: 90px 0px 100px; }
+.educa-row.v11 { padding: 100px 0px 45px; }
+.educa-row.section-row-course { padding: 86px 0px 100px; }
+.educa-row.page-about-us { padding: 77px 0px 90px; }
+.educa-row.section-team-member { padding: 88px 0px 100px; }
+.educa-row.section-carousel-coursegrid { padding: 224px 0px 0px; }
+.educa-row.section-carousel-coursegrid.style2 { padding: 87px 0px 100px; }
+.educa-row.section-carousel-coursegrid.section-coaching { padding: 0px 0px 141px; }
+.educa-row.page-shop-detail { padding: 100px 0px 60px; }
+.educa-row.section-shop-review { padding: 74px 0px 80px; }
+.educa-row.page-checkout { padding: 95px 0px 100px; }
+.educa-row.section-event-carousel { padding: 86px 0px 86px; }
+.educa-row.section-testimonials { padding: 85px 0px 74px; }
+
+.educa-row.section-product { padding: 87px 0px 90px }
+.section-product .title-section { margin-bottom: 73px; }
+.section-product .title-section .title, .section-coaching .title-section .title  { margin-bottom: 5px; }
+
+.padding-leftright-370 { padding: 0px 370px; }
+.padding-leftright-373-360 { padding: 0px 373px 0px 360px; }
+.padding-leftright-300 { padding: 0px 300px; }
+.padding-leftright-200 { padding: 0px 200px; }
+.padding-leftright-300-270 { padding: 0px 270px 0px 300px; }
+.padding-leftright-185 { padding: 0px 185px; }
+.padding-leftright-170 { padding: 0px 170px; }
+.padding-leftright-99 { padding: 0px 99px; }
+.padding-right70 { padding-right: 70px; }
+.padding-left70 { padding-left: 70px; }
+
+/* no-padding */
+.educa-row.no-padding-bottom { padding-bottom: 0; }
+.bg-theme { background-color: #f7f7f7; }
+.bg-white { background-color: #FFF; }
+
+/* Button 
+--------------------------------------------------------------*/
+.educa-button {
+    font-size: 14px;
+    padding: 17px 35px 15px 34px;
+}
+
+.educa-button:hover {
+    background-color: #1A1A23;
+}
+
+/* Educa divider
+-------------------------------------------------------------- */
+.divider {
+    width: 100%;
+    position: relative;
+    height: 30px;
+}
+.divider.h10 { height: 10px; }
+.divider.h51 { height: 51px; }
+.divider.h50 { height: 50px; }
+.divider.h60 { height: 60px; }
+
+/* Transition
+--------------------------------------------------------*/
+.icon-box, .icon-box .box-header img, .main-course .list-grid a, .portfolio-item .portfolio-info, .group-testimonial #testimonial-carousel .slides li img, .team-member,
+.group-testimonial #testimonial-carousel .slides li, .team-member .info-overlay, .team-member .avatar img, .group-testimonial #testimonial-carousel .slides li:before {
+    -webkit-transition: all 0.3s ease-in-out;
+       -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+         -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+}
+
+.icon-box .box-content .box-title a:hover, .icon-box .readmore a:hover {
+    color: #ec910e;
+}
+
+.icon-box.style2 .box-content .box-title,.group-testimonial, .icon-box, .form-search-course .field p, .form-register .field p,
+.team-member, .group-testimonial #testimonial-carousel .flex-viewport, .input-field.after-dropdown, .infobox, .group-testimonial #testimonial-carousel .slides li {
+    position: relative;
+}
+
+.icon-box.style2 .box-content p {
+    letter-spacing: 0.1px;
+}
+
+/* Educa-title
+--------------------------------------------------------*/
+.title-section {
+    margin-bottom: 53px;
+}
+
+.title-section .title {
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.title-section.color-style .title {
+    color: #fff;
+}
+
+.title-section .sub-title {
+    font-size: 16px;
+    line-height: 30px;
+    color: #c2c2c2;
+}
+
+.title-section .sub-title.color2 { color: #636363; }
+
+/* style fontsize */
+.title-section.style-fontsize {
+    margin-bottom: 54px;
+}
+
+.title-section.style-fontsize .title {
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 5px;
+}
+
+.title-section.style-fontsize .sub-title {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.section-iconbox .title-section .title {
+    margin-bottom: 4px;
+}
+
+.section-iconbox .title-section {
+    margin-bottom: 67px;
+}
+
+.section-latest-post .title-section {
+    padding-left: 70px;
+}
+
+.section-event-post .title-section, .section-latest-post .title-section {
+    margin-bottom: 68px;
+}
+
+/* Educa-iconbox
+--------------------------------------------------------*/
+.icon-box {
+    background-color: #FFF;
+    padding: 56px 35px 46px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+}
+
+.icon-box, .icon-box.icon-left:hover, .group-iconbox, .form-search-course, .form-create-account, .educa-callme-form p.group-input-email input, .educa-callme-form p.group-btn .educa-button {
+    box-shadow: 0px 18px 32px 0px rgba(0, 0, 0, 0.1);
+}
+
+.icon-box .box-header {
+    margin-bottom: 49px;
+}
+
+.icon-box:hover .box-header img {
+    -webkit-transform: translateY(-10px);
+       -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+         -o-transform: translateY(-10px);
+            transform: translateY(-10px);
+}
+
+.icon-box .box-content .box-title {
+    margin-bottom: 18px;
+}
+
+.icon-box .box-content .box-title a {
+    color: #1a1a23;
+}
+
+.icon-box .box-content p {
+    margin-bottom: 9px;
+}
+
+.icon-box .readmore a {
+    font-size: 12px;
+    font-weight: 700;
+    color: #c2c2c2;
+}
+
+.icon-box .readmore a:hover {
+    text-decoration: underline;
+}
+
+/* style iconLeft*/
+.icon-box.icon-left, .icon-box.style2 {
+    box-shadow: none;
+}
+
+.icon-box.icon-left {
+    padding: 30px 34px 14px 30px;
+}
+
+.icon-box.icon-left .box-header {
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+.icon-box.icon-left .box-header.padding-left-7 {
+    padding-left: 7px;
+}
+
+.icon-box.icon-left .box-content {
+    overflow: hidden;
+    margin-top: -3px;
+}
+
+/* Style2 */
+.group-form-iconbox {
+    position: relative;
+}
+
+.group-iconbox {
+    position: absolute;
+    top: -144px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    background-color: #FFF;
+    margin: 0px -15px 0px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+}
+
+.group-iconbox2 {
+    margin-top: -94px;
+}
+
+.icon-box.style2 {
+    float: left;
+    width: 33.33%;
+    padding: 72px 41px 62px 55px;
+}
+
+.group-iconbox .icon-box.style2:first-of-type {
+    padding: 71px 41px 20px 65px;
+}
+
+.group-iconbox .icon-box.style2:last-of-type {
+    padding: 71px 50px 20px 46px;
+}
+
+.icon-box.style2::after {
+    position: absolute;
+    right: -6px;
+    top: 51px;
+    width: 1px;
+    height: 180px;
+    content: "";
+    z-index: 1;
+    background-color: #ebebeb;
+}
+
+.icon-box.style2:nth-child(2):after {
+    right: 3px;
+}
+
+.group-iconbox .icon-box.style2:last-of-type:after {
+    content: none;
+}
+
+.icon-box.style2 .box-content .box-title {
+    font-weight: 400;
+    font-size: 23px;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+.icon-box.style2 .box-content .box-title i {
+    color: #ec910e;
+    margin-right: 13px;
+}
+
+.group-iconbox .icon-box.style2:first-of-type .box-content .box-title,
+.group-iconbox .icon-box.style2:last-of-type .box-content .box-title {
+    margin-bottom: 22px;
+}
+
+.icon-box.style2 .box-content p {
+    line-height: 26px;
+}
+
+/* Educa-Testimonations
+--------------------------------------------------------*/
+.section-testimonation .title-section {
+    margin-bottom: 57px;
+}
+
+.testimonials .avatar {
+    position: relative;
+    z-index: 1;
+    margin-bottom: -41px;
+    margin-left: 49px;
+}
+
+.testimonials .avatar .testimonial-author {
+    width: 82px;
+    height: 82px;
+    border-radius: 100%;
+}
+
+.testimonials .content-testimonials {
+    position: relative;
+    background-color: #fff;
+    padding: 77px 40px 32px 49px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+}
+
+.testimonials .content-testimonials::after {
+    position: absolute;
+    right: 42px;
+    top: 54px;
+    content: "\f10e";
+    font-family: "FontAwesome";
+    color: #efefef;
+    font-size: 48px;
+}
+
+.testimonials .content-testimonials .name {
+    margin-bottom: 3px;
+}
+
+.testimonials .content-testimonials .position {
+    color: #ec910e;
+    margin-bottom: 11px;
+}
+
+.testimonials .content-testimonials .text {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #1a1a23;
+    margin-left: -3px;
+}
+
+/* Educa-Counter
+--------------------------------------------------------*/
+.educa-counter {
+    float: left;
+    width: 25%;
+    font-family: "Roboto Slab";
+}
+
+.educa-counter .content-number .numb-counter {
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 18px;
+}
+
+.educa-counter .content-counter .name-counter {
+    font-size: 16px;
+    color: #fff;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+/* Style2 */
+.educa-counter.style2 {
+    padding-left: 51px;
+}
+
+.educa-counter.style2:nth-child(2) {
+    padding-left: 59px;
+}
+
+.educa-counter.style2:nth-child(3) {
+    padding-left: 71px;
+}
+
+.educa-counter.style2:nth-child(4) {
+    padding-left: 57px;
+}
+
+.educa-counter.style2 .content-number {
+    float: left;
+    margin-right: 21px;
+}
+.educa-counter.style2 .content-number .numb-counter {
+    font-size: 60px;
+    color: #ec910e;
+    font-weight: 400;
+}
+
+.educa-counter.style2 .content-counter .name-counter {
+    font-size: 16px;
+    color: #636363;
+    overflow: hidden;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+
+/* Form Search Course
+--------------------------------------------------------*/
+.group-search-course {
+    position: relative;
+    top: 94px;
+}
+
+.form-search-course {
+    padding: 72px 130px 80px 130px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+}
+
+.form-search-course .title-form-course {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 41px;
+}
+
+.form-search-course .field p {
+    float: left;
+    width: 50%;
+}
+
+.form-search-course .field p::after, .widget-logo form.form-select .group-select::after, .form-shipping-calculator span::after, .input-field.after-dropdown::after {
+    position: absolute;
+    right: 20px;
+    top: 14px;
+    content: "\f107";
+    font-family: "FontAwesome";
+    cursor: pointer;
+}
+
+.form-search-course .field p.field-select-cate:after {
+    right: 35px;
+}
+
+.input-field.after-dropdown::after {
+    right: 2px;
+    top: 17px;
+}
+
+.form-search-course .field p.field-name:after, .form-search-course .field p.feild-button:after, .form-search-course .field p.field-search:after {
+    content: none;
+}
+
+.form-search-course .field  input, .form-search-course .field  select,
+.form-create-account .field  input {
+    height: 50px;
+}
+
+.form-create-account .field  input::placeholder, .educa-callme-form p.group-input-email input::placeholder {
+    font-size: 14px;
+    color: #c2c2c2;
+}
+
+.form-search-course .field  input, .form-search-course .field  select {
+    margin-bottom: 30px;
+}
+
+.form-search-course .field  input::placeholder {
+    font-size: 14px;
+    color: #636363;
+}
+
+.form-search-course .field  select {
+    padding-left: 19px;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+.form-search-course .field .field-name,.form-search-course .field .field-select-cate {
+    padding-right: 15px;
+}
+
+.form-search-course .field .field-select-gree,.form-search-course .field .field-select-price {
+    padding-left: 15px;
+}
+
+.form-search-course .field .feild-button { width: 100%; padding-top: 10px; }
+
+/* Style2 */
+.educa-form-keyword {
+    position: relative;
+    z-index: 999;
+}
+
+
+.form-search-course.style2 {
+    position: absolute;
+    left: 0;
+    top: -485px;
+    width: 100%;
+    padding: 0px 50px;
+    -webkit-border-radius: none;
+            border-radius: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background: transparent;
+}
+
+.form-search-course.style2 .field {
+    float: left;
+    width: 84.2%;
+    padding-right: 30px;
+}
+
+.form-search-course.style2 .field p {
+    width: 33.33%;
+    padding: 0;
+}
+
+.form-search-course.style2 .field input, .form-search-course.style2 .field select, .form-register .field p input {
+    height: 60px;
+    font-size: 15px;
+    margin-bottom: 0;
+    border: none;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+}
+
+.form-search-course.style2 .field input::placeholder {
+    font-size: 15px;
+    color: #636363;
+}
+
+.form-search-course.style2  .field p::before, .form-register .field p::before {
+    position: absolute;
+    right: 5px;
+    top: 11px;
+    z-index: 99;
+    width: 1px;
+    height: 40px;
+    content: "";
+    background-color: #ebebeb;
+}
+
+.form-search-course.style2  .field p.field-select-cate::before {
+    right: -6px;
+}
+
+.form-search-course.style2  .field p:last-of-type:before, .form-register .field p:last-of-type:before, .form-register .field p:nth-child(3):before {
+    content: none;
+}
+
+.form-search-course.style2  .field p::after {
+    top: 19px;
+}
+
+.form-search-course.style2 .field p.field-select-cate:after {
+    right: 15px;
+}
+
+.form-search-course.style2 .field .select-category {
+    padding-left: 15px;
+}
+
+.form-search-course.style2 .field .select-price {
+    padding-left: 26px;
+}
+
+.form-search-course.style2 .educa-button {
+    font-size: 15px;
+    letter-spacing: 1.1px;
+    padding: 24px 50px 21px 54px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+}
+
+/* Form register
+-------------------------------------------------------------- */
+.section-register {
+    position: relative;
+}
+
+.educa-form-register {
+    position: absolute;
+    left: 0;
+    top: -177px;
+    width: 100%;
+    padding: 36px 0px 40px;
+    background-color: rgba(255,255,255,0.1);    
+}
+
+.form-register h5 {
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 27px;
+}
+
+.form-register .field {
+    float: left;
+    width: 77%;
+}
+
+.form-register .field-button {
+    float: left;
+    width: 23%;
+}
+
+.form-register .field-button .educa-button {
+    padding: 22px 97px 18px 95px;
+     -webkit-border-top-left-radius: 0;
+            border-top-left-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+            border-bottom-left-radius: 0;
+}
+
+.form-register .field p {
+    float: left;
+    width: 33.33%;
+}
+
+.form-register .field p::before {
+    right: 14px;
+    top: 13px;
+    height: 30px;
+}
+
+.form-register .field p input {
+    height: 54px;
+    padding-left: 22px;
+}
+
+.form-register .field p input::placeholder {
+    color: #636363;
+}
+
+.form-register .field p.field-name input {
+    -webkit-border-top-left-radius: 3px;
+            border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+}
+
+.form-register .field p.field-email input, .form-register .field p.field-phone input {
+    padding-left: 6px;
+}
+
+/* Infobox Maps
+-------------------------------------------------------------- */
+.infobox { width: 341px; }
+.infobox .featured-address {
+    float: left;
+}
+
+.infobox:before {
+    position: absolute;
+    left: 160px;
+    bottom: -10px;
+    content: "";
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-top: 10px solid #ffffff;
+}
+
+.infobox .box-info {
+    float: left;
+    background-color: #fff;
+    padding: 15px 20px 21px 20px;
+}
+
+.infobox .box-info .title { color: #c2c2c2; margin-bottom: 5px; font-size: 14px; }
+.infobox .box-info .address { margin-bottom: 10px; line-height: 24px; font-size: 14px;}
+.infobox .box-info .address i { color: #ec910e; padding-right: 5px; }
+.infobox .box-info .educa-socials li { padding: 0px 15px; }
+.infobox .box-info .educa-socials li:first-child { padding-left: 0; }
+
+/* Section Create account
+-------------------------------------------------------------- */
+.group-form {
+    position: absolute;
+    top: -122px;
+    width: 95%;
+}
+
+.form-create-account {
+    position: relative;
+    padding: 51px 0px 59px;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+}
+
+.form-create-account .title-form {
+    margin-bottom: 37px;
+}
+
+.form-create-account .field .account-button {
+    margin-top: 20px;
+}
+
+.form-create-account .field .educa-button {
+    padding: 17px 52px 15px 52px;
+}
+
+.educa-save {
+    padding-right: 50px;
+}
+
+.educa-save .info-save {
+    display: inline-block;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    font-size: 48px;
+    background-color: #fff;
+    color: #ec910e;
+    padding: 20px 25px 23px;
+    margin-bottom: 32px;
+    font-weight: 700;
+    font-family: "Roboto slab";
+}
+
+.educa-save p {
+    color: #c2c2c2;
+}
+
+.educa-save h3.title-save {
+    color: #FFF;
+    margin-bottom: 12px;
+}
+
+/* Form Subscribe
+-------------------------------------------------------------- */
+.educa-subscribe-form p.group-input-email,.educa-subscribe-form p.group-btn,.educa-callme-form p.group-input-email, .educa-callme-form p.group-btn {
+    float: left;
+}
+
+.educa-subscribe-form p.group-input-email {
+    width: 74%;
+}
+
+.educa-subscribe-form p.group-btn {
+    width: 26%;
+}
+
+.educa-subscribe-form .field input, .educa-callme-form p.group-input-email input {
+    height: 46px;
+    
+}
+
+.educa-subscribe-form .field input::placeholder, .educa-callme-form p.group-input-email input::placeholder {
+    color: #c2c2c2;
+    
+}
+
+.educa-subscribe-form .field input::placeholder { 
+    font-size: 16px;
+}
+
+.educa-subscribe-form .field .educa-button {
+    padding: 17px 35px 15px 38px;
+}
+
+.educa-subscribe-form .notification_error, .educa-subscribe-form .notification_ok {
+    font-size: 16px;
+    color: #ec910e;
+    text-align: center;
+}
+
+.educa-callme-form p.group-input-email {
+    width: 70.95%;
+}
+
+.educa-callme-form p.group-btn {
+    width: 29.05%;
+}
+
+.educa-callme-form .field p.group-btn .educa-button {
+    padding: 17px 41px 15px 41px;
+}
+
+#subscribe-form label.valid, #subscribe-form label.error a {
+    display: none!important;
+}
+
+#subscribe-form label.error {
+    font-size: 15px;
+}
+
+#subscribe-form label.error, .subscription-success {
+    color: #ec910a;
+}
+
+.educa-subscribe-form.style2 label.error {
+    padding-left: 20px;
+}
+
+/* Form Login
+-------------------------------------------------------------- */
+.group-popuplogin .modal-dialog {
+    width: 500px;
+}
+
+.group-popuplogin .modal-body {
+    padding: 15px 23px 30px;
+}
+
+.form-login .input-login {
+    position: relative;
+    display: block;
+}
+
+.form-login .input-login::before {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    content: "\f003";
+    font-family: "FontAwesome";
+    color: #636363;
+    font-size: 18px;
+}
+
+.form-login .input-login.icon-pass::before {
+    content: "\f09c";
+}
+
+
+.form-login .input-login.icon-mobile::before {
+    content: "\f10b";
+}
+
+.form-login .input-login input {
+    padding-left: 40px;
+}
+
+.input-check span {
+    cursor: pointer;
+}
+
+.form-login .input-check {
+    float: left;
+}
+
+.form-login .float-left {
+    padding-right: 0;
+}
+
+.form-login .link-register {
+    text-align: right;
+}
+
+.form-login .button-login {
+    margin: 10px 0px 30px;
+    display: block;
+}
+
+.form-login .button-login .educa-button {
+    width: 100%;
+}
+
+.social-login {
+    margin-bottom: 20px;
+}
+
+.social-login a {
+    width: 50%;
+    display: block;
+    float: left;
+    padding: 10px;
+    color: #fff;
+    margin: 0px 0px;
+    background-color: #dd4b39;
+}
+
+.social-login a:hover {
+    color: #FFF;
+}
+
+.social-login a.facebook {
+    background-color: #2D4373;
+}
+
+.social-login a i {
+    padding-right: 8px;
+}
+
+.or-using h5 {
+    margin-bottom: 25px;
+}
+
+.user-box-footer a {
+    color: #ec910e;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+/* form register */
+.section-register {
+    background: url(../images/page/bg-register.jpg);
+}
+.group-register {
+    width: 550px;
+    margin: 0 auto;
+}
+
+.group-register .title-formlogin {
+    color: #FFF;
+}
+
+.group-register .form-login {
+    background-color: #ec910e;
+    padding: 20px 20px;
+    color: #FFF;
+}
+
+.group-register .form-login .input-login::before {
+    color: #ec910e;
+}
+
+.form-login .input-login.icon-name::before {
+    content: "\f007";
+}
+
+.form-login .input-login.icon-user::before {
+    content: "\f007";
+}
+
+.group-register .form-login .button-login {
+    margin: 30px 0px 30px;
+}
+
+.group-register .form-login .button-login .educa-button {
+    border: 2px solid #fff;
+}
+
+.group-register .form-login .button-login .educa-button:hover {
+    border-color: #222;
+}
+
+/* CountDown
+-------------------------------------------------------------- */
+.countdown .timeline {
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+}
+
+.countdown .timeline .numb {
+    font-family: 'Roboto Slab', sans-serif;
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.countdown .timeline .text {
+    position: relative;
+    font-size: 14px;
+    color: #c2c2c2;
+}
+
+.section-coundown .title-section {
+    margin-bottom: 51px;
+}
+
+.section-coundown .title-section .title {
+    margin-bottom: 4px;
+}
+
+.btn-coundown .educa-button {
+    padding: 17px 37px 15px 37px;
+}
+
+/* Style2 */
+.countdown.style2 .timeline .numb {
+    float: left;
+    font-size: 48px;
+    line-height: 50px;
+    margin-right: 10px;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.countdown.style2 .timeline .text {
+    float: left;
+    padding: 22px 0px 0px 9px;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.countdown.style2 .timeline .text:before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "/";
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+/* Educa accordion
+-------------------------------------------------------------- */
+.educa-accordion .educa-toggle {
+    margin: 0 0 6px;
+}
+
+.educa-accordion .toggle-header {
+    cursor: pointer;
+    padding: 5px 0px 7px 0px; 
+    position: relative;
+}
+
+.educa-accordion .toggle-header.box-item.active .meta-post {
+    display: none;
+}
+
+.educa-accordion .toggle-header::before,
+.educa-accordion .toggle-header:after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: "";
+}
+
+.educa-accordion .toggle-header::before {
+    width: 33px;
+    height: 33px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    border: 1px solid #ebebeb;
+}
+
+.educa-accordion .toggle-header::after {
+    right: 11px;
+    top: 2px;
+    content: "\f107";
+    font-family: "FontAwesome";
+    color: #FFF;
+    font-size: 14px;
+    color: #ebebeb;
+}
+
+.educa-accordion .toggle-header.active::before {
+    background-color: #ec910e;
+    border-color: #ec910e;
+}
+
+.educa-accordion .toggle-header.active::after {
+    content: "\f106";
+}
+
+.educa-accordion .toggle-info {
+    display: none;
+    overflow: hidden;
+    margin-bottom: 32px;
+}
+
+/* Educa Testimonial
+-------------------------------------------------------------- */
+.group-testimonial .testimonial .testimonial-message {
+    font-size: 24px;
+    line-height: 48px;
+    font-family: "Roboto Slab";
+    margin-bottom: 153px;
+}
+
+.group-testimonial .testimonial .testimonial-message, .testimonial .testimonial-author .name {
+    color: #fff; 
+}
+
+.group-testimonial .testimonial .testimonial-author .name {
+    margin-bottom: 3px;
+}
+
+.group-testimonial .testimonial .testimonial-author .position {
+    color: #c2c2c2;
+}
+
+.group-testimonial #testimonial-carousel .flex-viewport:before, .group-testimonial #testimonial-carousel .slides li:before {
+    position: absolute;
+    height: 2px;
+    content: "";
+}
+
+.group-testimonial #testimonial-carousel .flex-viewport:before {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFF;
+}
+
+.group-testimonial #testimonial-carousel .slides li:before {
+    left: 50%;
+    bottom: -22px;
+    width: 0%;
+    z-index: 99;
+    background-color: #ec910e;
+}
+
+.group-testimonial #testimonial-carousel .slides li:hover:before, .group-testimonial #testimonial-carousel .slides li.flex-active-slide:before {
+    left: 11%;
+    width: 78%;
+}
+
+.group-testimonial #testimonial-carousel {
+    position: absolute;
+    left: 0px;
+    top: 194px;
+    width: 100%;
+    padding: 0px 100px;
+}
+
+.group-testimonial #testimonial-carousel .flex-viewport {
+    padding: 20px 0px 22px;
+}
+
+.group-testimonial #testimonial-carousel .slides li {
+    text-align: center;
+    cursor: pointer;
+}
+
+.group-testimonial #testimonial-carousel .slides li img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.group-testimonial #testimonial-carousel .slides li:hover img,
+.group-testimonial #testimonial-carousel .slides li.flex-active-slide img {
+    width: 60px;
+    height: 60px;
+    margin-top: -20px;
+}
+
+/* team-member
+-------------------------------------------------------------- */
+.educa-team-member .slick-track {
+    padding: 50px 0px;
+}
+
+.educa-team-member {
+    margin: 0px -15px;
+}
+
+.team-member {
+    margin: 0px 15px;
+}
+
+.educa-team-member .team-member.slick-slide.slick-current.slick-active {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.team-member .avatar img {
+    width: 100%;
+}
+
+.team-member .info-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 36%;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(30, 30, 39, 0.5);
+    -webkit-transition: all 450ms ease-out 0s;
+       -moz-transition: all 450ms ease-out 0s;
+         -o-transition: all 450ms ease-out 0s;
+            transition: all 450ms ease-out 0s;
+}
+
+.team-member.slick-slide.slick-current .info-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.team-member .info-overlay .content {
+    margin-bottom: 10px;
+}
+
+.team-member .info-overlay .name {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 10px;
+    
+}
+
+.team-member .info-overlay .position {
+    font-size: 16px;
+    font-style: italic;
+    color: #c2c2c2;
+}
+
+.team-member .info-overlay .educa-socials li {
+    padding: 0px 12px;
+}
+
+.team-member .info-overlay .educa-socials li a {
+    color: #636363;
+}
+
+.team-member .info-overlay .educa-socials li a:hover {
+    color: #ec910e;
+}
+
+.educa-team-member.slick-slider .slick-arrow {
+    display: none!important;
+}
+
+/* Educa client
+-------------------------------------------------------------- */
+.group-client {
+    background-color: #fff;
+}
+
+.group-client .educa-services-carousel:hover {
+    cursor: pointer;
+}
+
+.group-client .owl-carousel-client .item img{
+    padding: 42px 44.5px;
+    border: 1px solid #e5e5e5;
+}
+
+/* Educa-Preloader
+-------------------------------------------------------------- */
+.loader {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fefefe;
+    z-index: 100000;  
+}
+
+.block-loader {
+    background-color: #ec910e;
+    float:left;
+    height:24px;
+    margin-left:7px;
+    width:24px;
+    opacity:0.1;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-animation-name:bounceG;
+    -moz-animation-duration:1.3s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-direction:linear;
+    -moz-transform:scale(0.7);
+    -webkit-animation-name:bounceG;
+    -webkit-animation-duration:1.3s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:linear;
+    -webkit-transform:scale(0.7);
+    -ms-animation-name:bounceG;
+    -ms-animation-duration:1.3s;
+    -ms-animation-iteration-count:infinite;
+    -ms-animation-direction:linear;
+    -ms-transform:scale(0.7);
+    -o-animation-name:bounceG;
+    -o-animation-duration:1.3s;
+    -o-animation-iteration-count:infinite;
+    -o-animation-direction:linear;
+    -o-transform:scale(0.7);
+    animation-name:bounceG;
+    animation-duration:1.3s;
+    animation-iteration-count:infinite;
+    animation-direction:linear;
+    transform:scale(0.7);
+}
+
+.loader1{
+    margin-left: -30px;
+    -moz-animation-delay:0.5s;
+    -webkit-animation-delay:0.5s;
+    -ms-animation-delay:0.5s;
+    -o-animation-delay:0.5s;
+    animation-delay:0.5s;
+}
+
+.loader2{
+    margin-left: 0px;
+    -moz-animation-delay:08s;
+    -webkit-animation-delay:.8s;
+    -ms-animation-delay:.8s;
+    -o-animation-delay:.8s;
+    animation-delay:.8s;
+}
+
+.loader3 {
+    margin-left: 30px;
+    -moz-animation-delay:1.3s;
+    -webkit-animation-delay:1.3s;
+    -ms-animation-delay:1.3s;
+    -o-animation-delay:1.3s;
+    animation-delay:1.3s;
+}
+
+@-moz-keyframes bounceG{
+  0% {
+  -moz-transform:scale(1.2);
+  opacity:1
+  }
+
+  100%{
+    -moz-transform:scale(0.7);
+    opacity:0.1
+  }
+}
+
+@-webkit-keyframes bounceG{
+  0% {
+    -webkit-transform:scale(1.2);
+    opacity:1
+  }
+
+  100% {
+    -webkit-transform:scale(0.7);
+    opacity:0.1
+  }
+}
+
+@-ms-keyframes bounceG{
+  0% {
+    -ms-transform:scale(1.2);
+    opacity:1
+  }
+
+  100% {
+    -ms-transform:scale(0.7);
+    opacity:0.1
+  }
+}
+
+@-o-keyframes bounceG{
+  0% {
+    -o-transform:scale(1.2);
+    opacity:1
+  }
+
+  100%{
+    -o-transform:scale(0.7);
+    opacity:0.1
+  }
+}
+
+@keyframes bounceG{
+  0% {
+    transform:scale(1.2);
+    opacity:1
+  }
+
+  100% {
+    transform:scale(0.7);
+    opacity:0.1
+  }
+}
+

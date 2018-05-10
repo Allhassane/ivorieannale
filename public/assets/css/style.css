@@ -1,0 +1,21 @@
+.register-form{
+    background-color: #fff;
+    border: 1px solid #eee;
+}
+.error-block{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.success{
+    color: green;
+}
+.danger{
+    color: red;
+}
+.warning{
+    color: orange;
+}
+.info{
+    color: blue;
+}
