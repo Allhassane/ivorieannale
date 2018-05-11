@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Controllers;
 
+use App\Exercise;
 use Illuminate\Http\Request;
 
 class SubjectsController extends Controller
@@ -13,7 +14,11 @@ class SubjectsController extends Controller
      */
     public function index()
     {
-        //
+
+        $datas = Exercise::OrderBy('id', 'DESC')->paginate(10);
+
+        return view('exercises.index', compact('datas'));
+
     }
 
     /**

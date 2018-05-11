@@ -71,6 +71,58 @@
 
 @yield('content')
 
+<!-- login -->
+
+<div class="modal fade group-popuplogin" id="popup_login">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body text-center clearfix">
+                <form class="form-login" action="{{ route('login') }}" method="post">
+
+                    {{ csrf_field() }}
+                    <h3 class="title-formlogin">CONNEXION</h3>
+
+                    <span class="input-login icon-mobile">
+                        <input type="text" placeholder="Numéro de téléphone" name="mobile" value="{{ old('mobile') }}" required="required">
+                        @if ($errors->has('mobile'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('mobile') }}</strong>
+                            </span>
+                        @endif
+                    </span>
+
+
+                    <span class="input-login icon-pass">
+                        <input type="password" placeholder="Mot de Passe" name="password" required="required">
+                        @if ($errors->has('password'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('password') }}</strong>
+                            </span>
+                        @endif
+                    </span>
+
+                    <label class="float-full">
+                        <span class="input-check">
+                            <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}>
+                            <span class="remember"> Remember Me</span>
+                        </span>
+                    </label>
+
+
+                    <span class="button-login"><button type="submit" name="submit" class="educa-button educa-button-register">CONNEXION</button></span>
+                </form>
+
+                <div class="user-box-footer">
+                    <p>Pas encore de compte ? <br><a href="{{ route('register') }}">inscrivez - vous !</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <footer id="footer" class="main-footer is-fixed" data-fixed="true" itemscope="itemscope">
     <div class="footer style3">
         <div class="footer-widgets">

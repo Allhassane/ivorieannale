@@ -5,19 +5,19 @@
 
     <nav id="menuzord" class="menuzord">
         <ul class="menu">
-            <li class="home">
+            <li class="accueil">
                 <a href="/">ACCUEIL</a>
             </li>
-            <li>
-                <a href="course-grid.html">EXERCICES</a>
+            <li class="exercice">
+                <a href="{{ route('front.exercises') }}">EXERCICES</a>
             </li>
-            <li>
-                <a href="about-us.html">EXAMENS</a>
+            <li class="examen">
+                <a href="{{ route('front.examinations') }}">EXAMENS</a>
             </li>
-            <li>
+            <li class="actu">
                 <a href="event.html">ACTUALITÉS</a>
             </li>
-            <li>
+            <li class="contact">
                 <a href="gallery.html">CONTACTEZ - NOUS !</a>
             </li>
 

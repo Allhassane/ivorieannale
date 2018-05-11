@@ -40,7 +40,7 @@
                                 @include('partials.flash')
 
                                 <span class="input-login icon-mobile">
-                                    <input type="text" placeholder="Numéro de téléphone" name="mobile" required="required">
+                                    <input type="text" placeholder="Numéro de téléphone" value="{{ $data->mobile }}" name="mobile" required="required">
                                     @if ($errors->has('mobile'))
                                         <span class="help-block">
                                             <strong>{{ $errors->first('mobile') }}</strong>

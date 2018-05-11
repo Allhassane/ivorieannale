@@ -69,9 +69,19 @@
                             {{--<a href="#" class="google"><i class="fa fa-google-plus"></i>Google Account</a>--}}
                             {{--<a href="#" class="facebook"><i class="fa fa-facebook"></i>Facebook Account</a>--}}
                             {{--</div>--}}
-                            <div class="user-box-footer">
-                                <p>Mot de passe oublié ?<br><a href="{{ route('password.request') }}">Récuperer mon mot de passe</a></p>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="user-box-footer">
+                                        <p>Vous n'avez pas encore de compte ?<br><a href="{{ route('register') }}">Créez-en un</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="user-box-footer">
+                                        <p>Mot de passe oublié ?<br><a href="{{ route('password.request') }}">Récuperer mon mot de passe</a></p>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </div>

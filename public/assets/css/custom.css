@@ -1457,7 +1457,19 @@ h6 { font-size: 16px; line-height: 18px; }
 }
 
 .box-item ul.meta-post.style3 li.day:before {
-	content: "\f133";
+	content: "\f017";
+}
+
+.box-item ul.meta-post.style3 li.matter:before {
+	content: "\f15b";
+}
+
+.box-item ul.meta-post.style3 li.level:before {
+	content: "\f012";
+}
+
+.box-item ul.meta-post.style3 li.download:before {
+	content: "\f019";
 }
 
 .box-item ul.meta-post.style3 li.student::before {
@@ -2384,7 +2396,7 @@ ul.ui-tabs-nav li a {
     right: 21px;
     top: 18px;
     font-family: "Roboto Slab";
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 700;
     color: #ec910e;
 }

@@ -38,3 +38,19 @@ Route::get('/check-my-number-with-ajax', 'ConfigController@checkedNumber')->name
 Route::get('/register/welcome', 'Auth\RegisterController@welcome')->name('welcome');
 Route::post('/register/confirm', 'ConfigController@confirmCode')->name('confirm.code');
 Route::get('/register/verified', 'Auth\RegisterController@verified')->name('verified');
+
+// front root
+Route::group(['prefix' => 'exercises'], function (){
+    Route::get('/', 'HomeController@ExercisesIndex')->name('front.exercises');
+});
+
+// front root
+Route::group(['prefix' => 'examinations'], function (){
+    Route::get('/', 'HomeController@ExaminationsIndex')->name('front.examinations');
+});
+
+// download
+Route::get('/download/exercises/{id}/{slug}', 'HomeController@downloadExercises')->name('download.exercises');
+Route::get('/download/examinations/{id}/{slug}', 'HomeController@downloadExamination')->name('download.examinations');
+Route::get('/download/corrected_exercises/{id}/{slug}', 'HomeController@downloadCorrectedExercises')->name('download.corrected_exercises');
+Route::get('/download/corrected_examinations/{id}/{slug}', 'HomeController@downloadCorrectedExaminations')->name('download.corrected_examinations');
