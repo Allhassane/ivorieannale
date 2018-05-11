@@ -10,16 +10,23 @@ use Illuminate\Support\Str;
 use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Traits\AlertsMessages;
 
-class ExerciseController extends Controller
+class ExercisesController extends \TCG\Voyager\Http\Controllers\VoyagerBaseController
 {
 
     use AlertsMessages;
 
-    public function store(Request $request){
+    // Update de l'exercice
+    public function update(Request $request, $id)
+    {
+        dd($id);
+    }
 
+    // Creation D'un nouvel exercice
+    public function store(Request $request){
         $destination_path = public_path('storage/exercises');
 
         $doc = $request->file('document');
+        dd($doc);
 
         $extension = ['pdf', 'PDF', 'doc', 'DOC', 'docx', 'DOCX', 'odt', 'ODT'];
 

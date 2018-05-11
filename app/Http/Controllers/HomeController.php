@@ -28,9 +28,9 @@ class HomeController extends Controller
 
         // compté les niveaux de l'ecole
 
-        foreach ($schools as $school){
-            $school['level'] = count(Level::where('school_id', $school->id)->get());
-        }
+//        foreach ($schools as $school){
+//            $school['level'] = count(Level::where('school_id', $school->id)->get());
+//        }
 
         // exercise
         $exercises = Exercise::OrderBy('id', 'DESC')->limit(8)->get();

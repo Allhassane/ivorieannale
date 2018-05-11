@@ -54,8 +54,8 @@
                     @if(Auth::guest())
                     <a href="{{ route('login') }}" title="">Inscription OU Connexion</a>
                     @else
-                        @php(list($username, $var) = explode(' ', Auth::user()->name))
-                        <a href="{{ route('logout') }}" title=""><i class="fa fa-user"></i> &nbsp; {{ $username }} | Deconnexion</a>
+                        {{--@php(list($username, $var) = explode(' ', Auth::user()->name))--}}
+                        {{--<a href="{{ route('logout') }}" title=""><i class="fa fa-user"></i> &nbsp; {{ $username }} | Deconnexion</a>--}}
                     @endif
                 </div>
 
