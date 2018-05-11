@@ -163,7 +163,7 @@
                                                         {{--<a href="{{ Storage::disk(config('voyager.storage.disk'))->url($data->{$row->field}) }}" target="_blank">--}}
                                                             {{--Télécharger--}}
                                                         {{--</a>--}}
-                                                            <a href="{{public_path()}}/storage/exercise/{{ $data->{$row->field} }}" download target="_blank">
+                                                            <a href="/storage/{{ $data->{$row->field} }}" download target="_blank">
                                                                 Télécharger
                                                             </a>
                                                     @endif

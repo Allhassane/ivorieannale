@@ -1,22 +1,21 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-
-use App\Exercise;
+use App\Examination;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Str;
 use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Traits\AlertsMessages;
 
-class ExercisesController extends \TCG\Voyager\Http\Controllers\VoyagerBaseController
+class ExamiationsController extends \TCG\Voyager\Http\Controllers\VoyagerBaseController
 {
 
     use AlertsMessages;
 
     public function index(Request $request)
     {
+
         // GET THE SLUG, ex. 'posts', 'pages', etc.
         $slug = $this->getSlug($request);
 
@@ -98,7 +97,7 @@ class ExercisesController extends \TCG\Voyager\Http\Controllers\VoyagerBaseContr
 
     public function edit(Request $request, $id)
     {
-        dump('edit');
+//        dump('edit');
         $slug = $this->getSlug($request);
 
         $dataType = Voyager::model('DataType')->where('slug', '=', $slug)->first();
@@ -136,41 +135,54 @@ class ExercisesController extends \TCG\Voyager\Http\Controllers\VoyagerBaseContr
     // Update de l'exercice
     public function update(Request $request, $id)
     {
-        dd($id);
+
+        $data = Examination::findOrFail($id);
+
+        if ($request->file('document')){
+
+            // supprimer l'ancien sujet
+
+            unlink(public_path('storage/').$data->document);
+
+            $doc = $request->file('document');
+
+            $fileName =  'examinations/'.$request->input('slug'). '.' .
+                $doc->getClientOriginalExtension();
+
+            $doc->move(
+                public_path('storage/examinations'), $fileName
+            );
+            $data->document = $fileName;
+        }
+
+        $data->title = $request->input('title');
+        $data->school_id = $request->input('school_id');
+        $data->level_id = $request->input('level_id');
+        $data->matter_id = $request->input('matter_id');
+        $data->slug = $request->input('slug');
+        $data->save();
+
+        return redirect()
+            ->route("voyager.examinations.index")
+            ->with([
+                'message'    => __('voyager::generic.successfully_updated')." Exercices",
+                'alert-type' => 'success',
+            ]);
     }
 
     // Creation D'un nouvel exercice
     public function store(Request $request){
-//        $destination_path = base_path() . '/storage/exercises';
-//        dump($destination_path);
 
         $doc = $request->file('document');
-        //dd($doc[0].filename);
-//
-//        $extension = ['pdf', 'PDF', 'doc', 'DOC', 'docx', 'DOCX', 'odt', 'ODT'];
-//
-//        if (!empty($doc)){
-//
-//            if (!in_array($doc->getClientOriginalExtension(), $extension)){
-//                return back()->withInput()->with('danger', 'L\'extension de cette image n\'est pas prise en charge');
-//            }else{
-//
-//                $newDocName = 'exercises/'.$request->input('slug').'.'.$doc->getClientOriginalExtension();
-//
-//                $doc->move($destination_path, $newDocName);
-//            }
-//        }
 
-        $fileName =  $request->input('slug'). '.' .
-            $doc[0]->getClientOriginalExtension();
+        $fileName =  'examinations/'.$request->input('slug'). '.' .
+            $doc->getClientOriginalExtension();
 
-        $doc[0]->move(
-            base_path() . '/storage/exercises', $fileName
+        $doc->move(
+            public_path('storage/examinations'), $fileName
         );
 
-        //dd($fileName);
-
-        $data = Exercise::create([
+        Examination::create([
             'title' => $request->input('title'),
             'document' => $fileName,
             'slug' => $request->input('slug'),
@@ -179,21 +191,42 @@ class ExercisesController extends \TCG\Voyager\Http\Controllers\VoyagerBaseContr
             'matter_id' => $request->input('matter_id')
         ]);
 
-        $this->alertSuccess(__('voyager::bread.success_created_bread'));
-        return back();
+        return redirect()
+            ->route("voyager.examinations.index")
+            ->with([
+                'message'    => __('voyager::generic.successfully_added_new')." Examens",
+                'alert-type' => 'success',
+            ]);
+    }
 
-        //
-//        $request->input('name', 'exercies');
-//        $dataType = Voyager::model('DataType');
-//        $res = $dataType->updateDataType($request->all(), true);
-//        $data = $res
-//            ? $this->alertSuccess(__('voyager::bread.success_created_bread'))
-//            : $this->alertError(__('voyager::bread.error_creating_bread'));
-//
-//        return redirect()->route('voyager.bread.index')->with($data);
 
-//        dd($data);
-//        return redirect()->route('voyager.exercises.index')->with($data);
+    /**
+     * Remove translations, images and files related to a BREAD item.
+     *
+     * @param \Illuminate\Database\Eloquent\Model $dataType
+     * @param \Illuminate\Database\Eloquent\Model $data
+     *
+     * @return void
+     */
+    protected function cleanup($dataType, $data)
+    {
+
+        // Delete Translations, if present
+        if (is_bread_translatable($data)) {
+            $data->deleteAttributeTranslations($data->getTranslatableAttributes());
+        }
+
+        // Delete Images
+        $this->deleteBreadImages($data, $dataType->deleteRows->where('type', 'image'));
+
+        unlink(public_path('storage/').$data->document);
+
+        // Delete Files
+//        foreach ($dataType->deleteRows->where('type', 'file') as $row) {
+//            foreach (json_decode($data->{$row->field}) as $file) {
+//                $this->deleteFileIfExists(public_path('storage/').$data->document);
+//            }
+//        }
     }
 
 }
