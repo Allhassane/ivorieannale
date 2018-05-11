@@ -169,7 +169,6 @@ class VoyagerBaseController extends Controller
 
     public function edit(Request $request, $id)
     {
-        dump('edit');
         $slug = $this->getSlug($request);
 
         $dataType = Voyager::model('DataType')->where('slug', '=', $slug)->first();
