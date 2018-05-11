@@ -888,12 +888,13 @@ h6 { font-size: 16px; line-height: 18px; }
 
 /* navigation */
 .nav-group {
-    float: left;
-    padding-left: 82px;
+    /*float: left;*/
+    /*padding-left: 82px;*/
 }
 
 #menuzord {
    float: right;
+	padding-right: 20px;
 }
 
 #menuzord ul {

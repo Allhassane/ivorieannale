@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Controllers\Controller;
 use App\Http\Controllers\Auth\ResetPasswordController;
 use App\MoovNumber;
 use App\User;

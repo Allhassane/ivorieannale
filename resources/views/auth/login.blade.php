@@ -8,11 +8,11 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-title-heading text-center">
-                        <h1 class="title">Register</h1>
+                        <h1 class="title">Connexion</h1>
                     </div>
                     <div class="bread-crumb text-center">
                         <ul>
-                            <li class="home"><a href="index.html">Home</a></li>
+                            <li class="home"><a href="/">Accueil</a></li>
                             <li>Register</li>
                         </ul>
                     </div>

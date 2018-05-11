@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Controllers\Controller;
 use App\Exercise;
 use App\Level;
 use App\School;

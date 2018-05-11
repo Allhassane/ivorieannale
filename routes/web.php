@@ -11,14 +11,6 @@
 |
 */
 
-
-//$namespacePrefix = '\\App\Controllers\\';
-//dd($namespacePrefix);
-Route::get('/', function () {
-    return view('welcome');
-});
-
-
 Route::group(['prefix' => 'admin'], function () {
     // dump($namespacePrefix);
     Voyager::routes();

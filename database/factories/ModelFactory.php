@@ -22,3 +22,61 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+
+/** @var \Illuminate\Database\Eloquent\Factory $factory */
+$factory->define(App\School::class, function (Faker\Generator $faker) {
+
+    return [
+        'name' => $faker->unique()->company,
+        'city' => $faker->city,
+        'statut' => 1
+    ];
+});
+
+
+/** @var \Illuminate\Database\Eloquent\Factory $factory */
+$factory->define(App\Matter::class, function (Faker\Generator $faker) {
+
+    $name = $faker->jobTitle;
+    $slug = \Illuminate\Support\Str::slug($name);
+
+    return [
+        'title' => $name,
+        'slug' => $slug
+    ];
+});
+
+
+/** @var \Illuminate\Database\Eloquent\Factory $factory */
+$factory->define(App\Examination::class, function (Faker\Generator $faker) {
+
+    $name = $faker->jobTitle;
+    $slug = \Illuminate\Support\Str::slug($name);
+
+    return [
+        'title' => $name,
+        'document' => $slug.'.pdf',
+        'school_id' => $faker->numberBetween(1,20),
+        'level_id' => $faker->numberBetween(1,7),
+        'matter_id' => $faker->numberBetween(1,20),
+        'slug' => $slug,
+        'download' => 0
+    ];
+});
+
+
+/** @var \Illuminate\Database\Eloquent\Factory $factory */
+$factory->define(App\CorrectedExamination::class, function (Faker\Generator $faker) {
+
+    $name = $faker->jobTitle;
+    $slug = \Illuminate\Support\Str::slug($name);
+
+    return [
+        'title' => $name,
+        'document' => $slug.'.pdf',
+        'examination_id' => $faker->numberBetween(1,54),
+        'slug' => $slug,
+        'download' => 0
+    ];
+});

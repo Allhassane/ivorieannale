@@ -108,7 +108,7 @@
                     <div class="col-sm-4">
 
                         <div class="modal-body text-center clearfix register-form">
-                            <h3 class="title-formlogin">Bienvenue sur coursera</h3>
+                            <h3 class="title-formlogin text-center">Bienvenue sur <br> Annale Ivoire</h3>
                             Inscrivez-vous dès aujourd'hui sur learning-machine pour profiter des sujets d'Examens, exercices etc... des ecole de renomé en Côte d'Ivoire
                             <hr>
 
