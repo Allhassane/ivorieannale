@@ -1,4 +1,3 @@
-<div class="col-md-4">
     <div class="sidebar page-course">
         <div class="sidebar-widget widget-searchbox">
             <form action="#" id="searchform" method="get">
@@ -17,7 +16,7 @@
                 @foreach($matters as $matter)
 
                 <li>
-                    <a href="#">{{ $matter->title }}</a>
+                    <a href="{{ route('front.by.category', ['bread_id' => $matter->id, 'bread' => 'matters', 'slug' => $matter->slug]) }}">{{ $matter->title }}</a>
                 </li>
 
                 @endforeach
@@ -33,7 +32,7 @@
 
                 @foreach($levels as $level)
 
-                <a href="#" class="all">{{ $level->title }}</a>
+                <a href="{{ route('front.by.category', ['bread_id' => $level->id, 'bread' => 'levels', 'slug' => $level->slug]) }}" class="all">{{ $level->title }}</a>
 
                 @endforeach
 
@@ -44,16 +43,18 @@
         @if(count($schools) > 0)
         <div class="sidebar-widget widget-location">
             <h3 class="widget-title">Etablissement</h3>
-            <label>
-                <select class="country">
-                    @foreach($schools as $school)
-                    <option value="">{{ $school->name }}</option>
-                    @endforeach
-                </select>
-            </label>
+            <ul class="all-course">
 
+                @foreach($schools as $school)
+
+                    <li>
+                        <a href="{{ route('front.by.category', ['bread_id' => $school->id, 'bread' => 'schools', 'slug' => $school->slug]) }}">{{ $school->name }}</a>
+                    </li>
+
+                @endforeach
+
+            </ul>
         </div><!-- /.widget-location -->
         @endif
 
     </div>
-</div>

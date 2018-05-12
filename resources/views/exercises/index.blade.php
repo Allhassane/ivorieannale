@@ -8,12 +8,16 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-title-heading text-center">
-                        <h1 class="title">Courses</h1>
+                        <h1 class="title"> @if($bread == 'exercises') SUJETS D'EXERCICES @else SUJETS D'EXAMENS @endif</h1>
                     </div>
                     <div class="bread-crumb text-center">
                         <ul>
-                            <li class="home"><a href="index.html">Home</a></li>
-                            <li>Courses</li>
+                            <li class="home"><a href="/">Accueil</a></li>
+                            @if($bread == 'exercises')
+                                <li>Exercices</li>
+                            @else
+                                <li>Examens</li>
+                            @endif
                         </ul>
                     </div>
                 </div><!-- /.col-md-12 -->
@@ -28,7 +32,9 @@
             <div class="container">
                 <div class="row">
 
-                    @include('partials.sidebar')
+                    <div class="col-sm-4">
+                        @include('partials.sidebar')
+                    </div>
 
                     <div class="col-md-8  reponsive-mt50">
                         <div class="blog-posts main-course course-list">

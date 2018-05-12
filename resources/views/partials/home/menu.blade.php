@@ -15,10 +15,10 @@
                 <a href="{{ route('front.examinations') }}">EXAMENS</a>
             </li>
             <li class="actu">
-                <a href="event.html">ACTUALITÉS</a>
+                <a href="{{ route('blog') }}">ACTUALITÉS</a>
             </li>
             <li class="contact">
-                <a href="gallery.html">CONTACTEZ - NOUS !</a>
+                <a href="{{ route('contacts') }}">CONTACTEZ - NOUS !</a>
             </li>
 
         </ul><!-- /.menu -->

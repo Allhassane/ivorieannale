@@ -8,7 +8,9 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- Theme Page Title -->
-    <title>EDUCA | Multiconcept Education & Courses HTML Template</title>
+    <title>{{ setting('site.title') }}</title>
+
+    @yield('meta')
 
     <meta name="description" content="">
     <meta name="author" content="jrbthemes.com">
@@ -39,6 +41,17 @@
     {{--<span class="loader3 block-loader"></span>--}}
 {{--</div>--}}
 <!-- group-slide -->
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v3.0&appId=1915453065395718&autoLogAppEvents=1';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
 <div class="group-header">
     <!-- Header -->
     <header id="header" class="header clearfix">
@@ -285,6 +298,25 @@
 <script src="/assets/js/jquery.cookie.js"></script>
 <script src="/assets/js/script.js"></script>
 
+
+<script>
+    window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function(f) {
+            t._e.push(f);
+        };
+
+        return t;
+    }(document, "script", "twitter-wjs"));
+</script>
 
 @yield('js')
 

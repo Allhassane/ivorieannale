@@ -40,17 +40,25 @@ Route::post('/register/confirm', 'ConfigController@confirmCode')->name('confirm.
 Route::get('/register/verified', 'Auth\RegisterController@verified')->name('verified');
 
 // front root
-Route::group(['prefix' => 'exercises'], function (){
-    Route::get('/', 'HomeController@ExercisesIndex')->name('front.exercises');
-});
+Route::get('/exercises', 'HomeController@ExercisesIndex')->name('front.exercises');
+Route::get('/examinations', 'HomeController@ExaminationsIndex')->name('front.examinations');
+Route::get('/category', 'HomeController@ByCategoryIndex')->name('front.by.category');
+//Route::get('/levels', 'HomeController@ByLevelsIndex')->name('front.by.levels');
+//Route::get('/schools', 'HomeController@BySchoolsIndex')->name('front.by.schools');
 
-// front root
-Route::group(['prefix' => 'examinations'], function (){
-    Route::get('/', 'HomeController@ExaminationsIndex')->name('front.examinations');
-});
+
 
 // download
 Route::get('/download/exercises/{id}/{slug}', 'HomeController@downloadExercises')->name('download.exercises');
 Route::get('/download/examinations/{id}/{slug}', 'HomeController@downloadExamination')->name('download.examinations');
 Route::get('/download/corrected_exercises/{id}/{slug}', 'HomeController@downloadCorrectedExercises')->name('download.corrected_exercises');
 Route::get('/download/corrected_examinations/{id}/{slug}', 'HomeController@downloadCorrectedExaminations')->name('download.corrected_examinations');
+
+// blog
+Route::get('/blog', 'HomeController@blog')->name('blog');
+Route::get('/blog/{slug}', 'HomeController@blogShow')->name('blog.show');
+
+// contact
+
+Route::get('/contacts', 'HomeController@contacts')->name('contacts');
+Route::post('/contacts/send', 'HomeController@contactSend')->name('contacts.send');
