@@ -36,16 +36,38 @@ class HomeController extends Controller
         // les ecole
         $schools = School::where('statut', 1)->OrderBy('id', 'DESC')->limit(8)->get();
 
-        // compté les niveaux de l'ecole
-
-//        foreach ($schools as $school){
-//            $school['level'] = count(Level::where('school_id', $school->id)->get());
-//        }
-
         // exercise
-        $exercises = Exercise::OrderBy('id', 'DESC')->limit(8)->get();
+        $exercises = Exercise::OrderBy('id', 'DESC')->limit(5)->get();
 
-        return view('home.index', compact('slides', 'sections', 'schools', 'exercises'));
+        foreach ($exercises as $data){
+            $data['corrige'] = CorrectedExercise::where('exercise_id', $data->id)->first();
+        }
+
+        // examination
+        $examinations = Examination::OrderBy('id', 'DESC')->limit(5)->get();
+
+        foreach ($examinations as $data){
+            $data['corrige'] = CorrectedExamination::where('examination_id', $data->id)->first();
+        }
+
+        $matters = Matter::OrderBy('title', 'ASC')->limit(10)->get();
+        $levels = Level::get();
+
+        $blogIndex = Actualite::where('statut', 1)->OrderBy('id', 'DESC')->first();
+        $blogs = Actualite::where('id', '<>', $blogIndex->id)->where('statut', 1)->OrderBy('id', 'DESC')->limit(3)->get();
+
+        return view('home.index', compact(
+            'slides',
+            'sections',
+            'schools',
+            'exercises',
+            'bread',
+            'matters',
+            'examinations',
+            'levels',
+            'blogIndex',
+            'blogs'
+        ));
     }
 
     /**
@@ -254,7 +276,7 @@ class HomeController extends Controller
                 ), function($message) use ($email_user, $mobile, $name)
                 {
                     $message->from($email_user);
-                    $message->to(setting('site', 'email'), 'Ivoire Annale')->subject('Message de '. $name);
+                    $message->to(setting('site.email'), 'Ivoire Annale')->subject('Message de '. $name);
                 });
 
         }

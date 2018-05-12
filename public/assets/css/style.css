@@ -8,14 +8,14 @@
     right: 10px;
 }
 .success{
-    color: green;
+    color: #00A000;
 }
 .danger{
-    color: red;
+    color: #E82323;
 }
 .warning{
-    color: orange;
+    color: #FF7F00;
 }
 .info{
-    color: blue;
+    color: #348DEF;
 }

@@ -1,5 +1,9 @@
 @extends('layout.header')
 
+@section('title')
+    {{ setting('site.title') }}
+@endsection
+
 @section('content')
 
     <!-- Page title -->

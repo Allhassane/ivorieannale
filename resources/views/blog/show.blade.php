@@ -1,5 +1,9 @@
 @extends('layout.header')
 
+@section('title')
+    {{ $data->title }} | {{ setting('site.site_name') }}
+@endsection
+
 @section('meta')
     <meta property="og:url"           content="{{ route('blog.show', $data->slug) }}" />
     <meta property="og:type"          content="website" />

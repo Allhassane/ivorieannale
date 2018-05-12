@@ -1,59 +1,42 @@
-<section class="educa-row section-carousel-coursegrid">
+<section class="educa-row">
 
-    faut parler moi suis la jusqu'a <div class="container-fluid2">
+    <div class="container-fluid2">
         <div class="text-center">
             <h1 class="title">Les Exercices récents</h1>
         </div>
-        <div class="main-course course-grid blog-carousel">
+        <div class="main-course">
 
             <div class="row">
+                <div class="col-sm-offset-1 col-sm-8">
+                    @foreach($exercises as $data)
 
-            @php($i=1)
-                @foreach($exercises as $data)
+                        @include('partials.exercises.item')
 
-                    @include('partials.home.school_item')
+                    @endforeach
+                </div>
+                <div class="col-sm-3">
 
-                    @if($i==4)
-            </div>
+                    @if(count($matters) > 0)
+                        <div class="sidebar-widget widget-all-course">
+                            <h3 class="widget-title">Toutes les matières</h3>
+                            <ul class="all-course">
 
-            <div class="row">
-            @endif
+                                @foreach($matters as $matter)
 
-            @php($i++)
-                faut parler moi suis la jusqu'a @endforeach
+                                    <li>
+                                        <a href="{{ route('front.by.category', ['bread_id' => $matter->id, 'bread' => 'matters', 'slug' => $matter->slug]) }}">{{ $matter->title }}</a>
+                                    </li>
 
-            </div>
+                                @endforeach
 
-        </div>
-    </div>
-</section>
+                            </ul>
+                        </div><!-- /widget-all-course -->
+                    @endif
 
-<section class="educa-row section-carousel-coursegrid">
-
-    <div class="container-fluid2">
-        <div class="title-section text-center">
-            <h1 class="title">Exercices</h1>
-            <div class="sub-title">Trouvez des sujet et examen des meilleur etablisement du pays</div>
-        </div>
-        <div class="blog-posts main-course course-list style2 coaching">
-
-            <div class="row">
-
-            @php($i=1)
-                @foreach($exercises as $data)
-
-                    @include('partials.home.school_item')
-
-            @if($i==4)
-            </div>
-
-            <div class="row">
-            @endif
-
-            @php($i++)
-            @endforeach
+                </div>
 
             </div>
+
         </div>
     </div>
 </section>

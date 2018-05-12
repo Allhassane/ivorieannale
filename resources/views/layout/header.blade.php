@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<!-- Mirrored from jrbthemes.com/html/educa/index.html by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 08 May 2018 14:55:44 GMT -->
 <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- Theme Page Title -->
-    <title>{{ setting('site.title') }}</title>
+
+    <title>@yield('title', setting('site.title'))</title>
 
     @yield('meta')
 
-    <meta name="description" content="">
-    <meta name="author" content="jrbthemes.com">
+    <meta name="description" content="{{ setting('site.description') }}">
 
     <script src="/assets/js/html5shiv.js"></script>
     <script src="/assets/js/respond.min.js"></script>
 
     <!-- Favicon  -->
-    <link href="/assets/icon/apple-touch-icon-48-precomposed.png" rel="icon" sizes="48x48">
-    <link href="/assets/icon/apple-touch-icon-32-precomposed.png" rel="icon" sizes="32x32">
-    <link href="/assets/icon/favicon.png" rel="shortcut icon">
 
     <!-- Link Style -->
     <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css" >
@@ -35,11 +31,11 @@
 </head>
 
 <body class="header-scroll">
-{{--<div class="loader">--}}
-    {{--<span class="loader1 block-loader"></span>--}}
-    {{--<span class="loader2 block-loader"></span>--}}
-    {{--<span class="loader3 block-loader"></span>--}}
-{{--</div>--}}
+<div class="loader">
+    <span class="loader1 block-loader"></span>
+    <span class="loader2 block-loader"></span>
+    <span class="loader3 block-loader"></span>
+</div>
 <!-- group-slide -->
 
 <div id="fb-root"></div>
@@ -57,7 +53,7 @@
     <header id="header" class="header clearfix">
         <div class="header-group clearfix">
             <div id="logo" class="logo">
-                <a href="index.html" rel="home">
+                <a href="/" rel="home">
                     <img src="/assets/images/logo.png" alt="image">
                 </a>
             </div><!-- /.logo -->

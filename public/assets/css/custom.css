@@ -74,8 +74,8 @@
 		font-size: 100%; 
 		font-weight: inherit; 
 		font-style: inherit; 
-		vertical-align: baseline; 
-		margin: 0; 
+		vertical-align: baseline;
+		margin: 0;
 		padding: 0; 
 		border: 0; 
 		outline: 0;
@@ -238,7 +238,7 @@ a {
 
 a:hover,
 a:focus {
-	color: #ec910e;
+	color: #008FFA;
 	text-decoration: none;
 	outline: 0;
 }
@@ -274,7 +274,7 @@ input[type="submit"] {
 	font-weight: 700;	
     color: #fff;
   	background-image: none;
-  	background-color: #ec910e;
+  	background-color: #008FFA;
   	padding: 14px 29px 14px 29px;
   	-webkit-border-radius: 2px;
   	        border-radius: 2px;
@@ -327,7 +327,7 @@ input[type="url"]:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus {
-	border: 1px solid #ec910e;
+	border: 1px solid #008FFA;
 	-webkit-box-shadow: none;
 	   -moz-box-shadow: none;
 			box-shadow: none;
@@ -464,7 +464,7 @@ h6 { font-size: 16px; line-height: 18px; }
 
 .educa-socials li a:hover, .bottom a:hover, .widget-company ul li:hover a, .main-course.style2 .box-item .content-post .author-post .text h6 a:hover, .sidebar-widget.widget-recent-post ul.meta-post li a:hover, .bottom.style2 .educa-socials li a:hover, .educa-information li a:hover, .widget-logo .educa-information li a:hover, .widget-logo .educa-information li:before, .sidebar-widget.widget-price-list .title span, .sidebar-widget.widget-price-list ul.price-list li i,
 .coaching.main-course.course-list .box-item .content-post ul.meta-post li span, .bread-crumb ul li a:hover, .page-title.style2 .bread-crumb ul li a:hover,.cart:hover a, .product.style2 .content-product .product-info .gift-heat, .product.style2 .content-product .info-sele li::before, .post-event.style2 .box-item ul.meta-post2.style2 span, .comments-area ol.comment-list .comment-text .comment-reply a.reply:hover, .comments-area ol.comment-list .comment-text .comment-reply a.reply:hover:before, .comments-area ol.comment-list .comment-text .comment-data h5 a:hover {
-	color: #ec910e;
+	color: #008FFA;
 }
 
 .group-info-contact .call-direc a:hover, .form-total p, .main-course.style2 .box-item .content-post .author-post .text h6 a, .group-info-contact .mail-contact:hover, .bottom, .bottom a {
@@ -474,7 +474,7 @@ h6 { font-size: 16px; line-height: 18px; }
 .portfolio-filter li.active a, .portfolio-filter li:hover a , .blog-pagination .educa-pagination li a:hover ,
 .info-customer .subscribecode-form .sub-code input[type="submit"], .info-customer .group-check-order .btn-order input[type="submit"], .blog-pagination .educa-pagination li.active a, .educa-product-detail .cart-product .btn-view-shop, a.btn-view-shop:hover, .form-cart input[type="submit"]:hover, .product .content-product .gallery-product .gallery-link li:hover span, .section-carousel-coursegrid .btn-filter-group .btn-filter:hover,.section-carousel-coursegrid .btn-filter-group .btn-filter.btn-active {
     color: #FFF;
-    background-color: #ec910e;
+    background-color: #008FFA;
 }
 
 .post-event-page .box-item:hover, ul.ui-tabs-nav li:hover, ul.ui-tabs-nav li.active, .portfolio-filter li.active a, .portfolio-filter li:hover a , .blog-pagination .educa-pagination li a:hover , .btn-filter-group .btn-filter:hover, .btn-filter-group .btn-filter.btn-active,
@@ -534,7 +534,7 @@ h6 { font-size: 16px; line-height: 18px; }
 .educa-dropdown.educa-location > ul > li > ul, .educa-dropdown.educa-sign-in > ul > li > ul {
     left: 0;
     width: 150px;
-    background-color: #ec910e;
+    background-color: #008FFA;
 }
 
 .educa-dropdown.educa-location > ul > li > ul {
@@ -581,8 +581,8 @@ h6 { font-size: 16px; line-height: 18px; }
 
 .educa-socials.style2 li.link a:hover {
 	color: #FFF;
-	background-color: #ec910e;
-	border-color: #ec910e;
+	background-color: #008FFA;
+	border-color: #008FFA;
 }
 
 /* Top Educa Infomation */
@@ -689,7 +689,7 @@ h6 { font-size: 16px; line-height: 18px; }
 	text-align: center;
 	line-height: 15px;
 	font-size: 11px;
-	background-color: #ec910e;
+	background-color: #008FFA;
 	color: #fff;
 	-webkit-border-radius: 50%;
 	   -moz-border-radius: 50%;
@@ -741,7 +741,7 @@ h6 { font-size: 16px; line-height: 18px; }
 }
 
 .header .header-group .login a, #menuzord-mobi ul li.added span a {
-    background-color: #ec910e;
+    background-color: #008FFA;
     display: inline-block;
     padding: 5px 27px 8px 27px;
     border-radius: 2px;
@@ -876,7 +876,7 @@ h6 { font-size: 16px; line-height: 18px; }
     bottom: 0;
     width: 100%;
     height: 3px;
-    background-color: #ec910e;
+    background-color: #008FFA;
     -webkit-transform: translateY(3px);
     transform: translateY(3px);
 }
@@ -920,7 +920,7 @@ h6 { font-size: 16px; line-height: 18px; }
 #menuzord > ul > li:last-child > a { padding-right: 0; }
 
 #menuzord > ul > li > a:hover, #menuzord > ul > li.home > a {
-	color: #ec910e;
+	color: #008FFA;
 }
 
 .header .group-icon-nav {
@@ -1110,7 +1110,7 @@ h6 { font-size: 16px; line-height: 18px; }
 .btn-menu:before,
 .btn-menu:after, 
 .btn-menu span {
-	background-color: #ec910e;
+	background-color: #008FFA;
     -webkit-transition: all ease .238s;
        -moz-transition: all ease .238s;
             transition: all ease .238s;
@@ -1373,7 +1373,7 @@ h6 { font-size: 16px; line-height: 18px; }
 }
 
 .box-item .title-post a:hover {
-	color: #ec910e;
+	color: #008FFA;
 }
 
 /* Meta Post */
@@ -1449,7 +1449,7 @@ h6 { font-size: 16px; line-height: 18px; }
  	left: 0;
  	top: 0;
   	content: "\f017";
-  	color: #ec910e;
+  	color: #008FFA;
 }
 
 .box-item ul.meta-post.style3 li:last-child:before {
@@ -1496,7 +1496,7 @@ h6 { font-size: 16px; line-height: 18px; }
 }
 
 .box-item ul.meta-post2 li a:hover {
-	color: #ec910e;
+	color: #008FFA;
 }
 
 .box-item ul.meta-post2 li a::after, .box-item ul.meta-post.style3 li::before {
@@ -1529,7 +1529,7 @@ h6 { font-size: 16px; line-height: 18px; }
 .box-item ul.meta-post2.style2 li {
 	font-weight: 700;
 	font-size: 24px;
-	color: #ec910e;
+	color: #008FFA;
 	line-height: 18px;
 }
 
@@ -1852,8 +1852,8 @@ ul.ui-tabs-nav li {
 }
 
 ul.ui-tabs-nav li:hover, ul.ui-tabs-nav li.active {
-	background-color: #ec910e;
-	border-color: #ec910e;
+	background-color: #008FFA;
+	border-color: #008FFA;
 	
 }
 
@@ -1983,7 +1983,7 @@ ul.ui-tabs-nav li a {
 	left: 0;
 	top: 0;
 	content: "\f00c";
-	color: #ec910e;
+	color: #008FFA;
 }
 
 /* Course detail
@@ -2036,7 +2036,7 @@ ul.ui-tabs-nav li a {
 }
 
 .course-detail .box-item ul.meta-post.style3 li i {
-	color: #ec910e;
+	color: #008FFA;
 }
 
 .course-detail .box-item ul.meta-post.style3 li h6 {
@@ -2077,7 +2077,7 @@ ul.ui-tabs-nav li a {
 }
 
 .course-detail .box-item .entry-post ul li i {
-	color: #ec910e;
+	color: #008FFA;
 	font-size: 14px;
 	padding-right: 12px;
 }
@@ -2177,7 +2177,7 @@ ul.ui-tabs-nav li a {
 }
 
 .educa-progress .progress-count {
-    background-color: #ec910e;
+    background-color: #008FFA;
     height: 10px;
     width: 0;
 }
@@ -2239,7 +2239,7 @@ ul.ui-tabs-nav li a {
 }
 
 .course-detail .comments-area ol.comment-list  .comment-thumb .position h6 a, .course-detail .comments-area ol.comment-list  .start-pri i {
-	color: #ec910e;
+	color: #008FFA;
 }
 
 .course-detail .comments-area ol.comment-list  .comment-thumb .position span {
@@ -2336,7 +2336,7 @@ ul.ui-tabs-nav li a {
 }
 
 .main-course .list-grid a.active, .main-course .list-grid a:hover {
-    background-color: #ec910e;
+    background-color: #008FFA;
     color: #FFF;
 }
 
@@ -2398,7 +2398,7 @@ ul.ui-tabs-nav li a {
     font-family: "Roboto Slab";
     font-size: 18px;
     font-weight: 700;
-    color: #ec910e;
+    color: #008FFA;
 }
 
 .main-course.course-grid .box-item .content-post .price.free{
@@ -2653,7 +2653,7 @@ ul.ui-tabs-nav li a {
     background-color: #fff;
     text-transform: uppercase;
     font-weight: 700;
-    color: #ec910e;
+    color: #008FFA;
     font-family: "Roboto slab";
     padding: 3px 0px 5px;
     border-radius: 3px;
@@ -2794,7 +2794,7 @@ ul.ui-tabs-nav li a {
 	left: 1px;
 	top: -5px;
 	content: "\f004";
-	color: #EC910E;
+	color: #008FFA;
 }
 .comments-area ol.comment-list .comment-text .comment-reply a.reply {
 	color: #c2c2c2;
@@ -2860,7 +2860,7 @@ ul.ui-tabs-nav li a {
 }
 
 .portfolio-filter li.active a, .portfolio-filter li:hover a, .btn-filter-group li.active a {
-    border-color: #ec910e;
+    border-color: #008FFA;
 }
 
 .portfolio-filter li a, .btn-filter-group .btn-filter {
@@ -2896,7 +2896,7 @@ ul.ui-tabs-nav li a {
 	bottom: -2px;
 	width: 0;
 	height: 2px;
-	background-color: #ec910e;
+	background-color: #008FFA;
 }
 
 .btn-filter-group.style2 .btn-filter:hover:after, .btn-filter-group.style2 .btn-filter.btn-active::after {
@@ -3028,7 +3028,7 @@ ul.ui-tabs-nav li a {
 }
 
 .page-404 .error-info .title-section .sub-title a {
-	color: #ec910e;
+	color: #008FFA;
 	font-weight: 700;
 	padding-left: 3px;
 	text-decoration: underline;
@@ -3131,11 +3131,18 @@ ul.ui-tabs-nav li a {
 }
 
 .contactform label.error {
-    color: #ec910e;
+    color: #008FFA;
 }
 
 .contactform .educa-button {
     padding: 17px 35px 15px 36px;
+}
+
+.educa-button-home{
+	font-size: 14px;
+	padding: 17px 35px 15px 34px;
+	background-color: #008FFA;
+	color: #fff;
 }
 
 .group-contact .group-info-contact {
@@ -3180,7 +3187,7 @@ ul.ui-tabs-nav li a {
 	font-size: 24px;
 	font-family: "Roboto Slab";
 	font-weight: 700;
-	color: #ec910e;
+	color: #008FFA;
 }
 
 .group-info-contact .call-direc a { line-height: 34px; }
@@ -3304,7 +3311,7 @@ ul.ui-tabs-nav li a {
 
 .product .price ins {
 	font-size: 24px;
-	color: #ec910e;
+	color: #008FFA;
 }
 
 .product .content-product .gallery-product {
@@ -3372,7 +3379,7 @@ ul.ui-tabs-nav li a {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background-color: #ec910e;
+    background-color: #008FFA;
     line-height: 70px;
     text-align: center;
 }
@@ -3452,7 +3459,7 @@ table.shop_table {
 }
 
 .shop_table thead tr th.product-close {
-	color: #ec910e;
+	color: #008FFA;
 }
 
 .shop_table thead tr th.product-thumbnail {
@@ -3539,7 +3546,7 @@ table.shop_table {
 }
 
 .form-total tr.cart-column td .amount {
-	color: #ec910e;
+	color: #008FFA;
 	font-weight: 700;
 }
 
@@ -3594,7 +3601,7 @@ table.shop_table {
 .educa-product-detail .quantity input {
 	background-color: #f7f7f7;
     border-color: #f7f7f7;
-    color: #ec910e;
+    color: #008FFA;
     text-align: center;
     font-size: 18px;
     font-weight: 700;
@@ -3658,7 +3665,7 @@ table.shop_table {
 .customer p a {
 	position: relative;
 	font-weight: 700;
-	color: #ec910e;
+	color: #008FFA;
 	margin: 0px 4px 0px 5px;
 }
 
@@ -3719,7 +3726,7 @@ table.shop_table {
 }
 
 .info-customer input:focus, .info-customer select:focus {
-	border-bottom: 1px solid #ec910e;
+	border-bottom: 1px solid #008FFA;
     border-top: none;
     border-right: none;
     border-left: none;
@@ -3890,7 +3897,7 @@ table.shop_table {
 }
 
 .sidebar .sidebar-widget ul li a:hover {
-	color: #ec910e;
+	color: #008FFA;
 }
 
 .sidebar-widget.widget-searchbox #searchform {
@@ -3905,7 +3912,7 @@ table.shop_table {
     right: 0px;
     font-size: 14px;
     top: 4px;
-    color: #ec910e;
+    color: #008FFA;
     background: transparent;
     border: none;
     text-align: center;
@@ -4006,7 +4013,7 @@ table.shop_table {
 }
 
 .sidebar-widget.widget-tags a:hover, .blog-single .box-item .link-post a:hover {
-	background-color: #ec910e;
+	background-color: #008FFA;
 	color: #FFF;
 }
 
@@ -4065,7 +4072,7 @@ table.shop_table {
 
 .sidebar-widget.widget-images .info span {
 	font-size: 30px;
-	color: #ec910e;
+	color: #008FFA;
 	padding-left: 6px;
 	padding-right: 8px;
 }
@@ -4094,7 +4101,7 @@ table.shop_table {
 }
 
 .sidebar-widget.widget-all-course ul li:before, .widget-quick-link ul li:before, .widget-company ul li:before {
-	color: #ec910e;
+	color: #008FFA;
 	content: "\f105";
 	top: 0;
 }
@@ -4140,7 +4147,7 @@ table.shop_table {
     z-index: 1;
     display: block;
     height: 100%;
-    background-color: #ec910e;
+    background-color: #008FFA;
 }
 
 .widget-shop .ui-slider .ui-slider-handle {
@@ -4151,7 +4158,7 @@ table.shop_table {
     z-index: 2;
     top: -4px;
     outline: 0;
-    color: #ec910e;
+    color: #008FFA;
     -webkit-transition: none;
        -moz-transition: none;
     	 -o-transition: none;
@@ -4172,7 +4179,7 @@ table.shop_table {
     height: 200%;
     display: block;
     top: -1px;
-    background-color: #ec910e;
+    background-color: #008FFA;
 }
 
 .widget-shop .price_slider_amount {
@@ -4480,7 +4487,7 @@ table.shop_table {
 }
 
 .blog-pagination.style2 li a:hover {
-	background-color: #ec910e;
+	background-color: #008FFA;
 	color: #fff;
 }
 
@@ -4550,7 +4557,7 @@ table.shop_table {
 }
 
 .footer.style2 .educa-information li i {
-	color: #ec910e;
+	color: #008FFA;
 	padding-right: 8px;
 }
 
@@ -4765,7 +4772,7 @@ table.shop_table {
     top: 0;
     background: transparent;
     height: 46px;
-    color: #ec910e;
+    color: #008FFA;
     padding-right: 19px;
 }
 
@@ -4787,7 +4794,7 @@ table.shop_table {
     cursor: pointer;
     z-index: 1;
     overflow: hidden;
-    background-color: #ec910e;
+    background-color: #008FFA;
     border-radius: 3px;  
     -webkit-animation: bt-slideUpEffect 1.2s both;
     -ms-animation: bt-slideUpEffect 1.2s both;

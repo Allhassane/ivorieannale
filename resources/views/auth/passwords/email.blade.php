@@ -1,5 +1,9 @@
 @extends('layout.header')
 
+@section('title')
+    Mot de passe oublié | {{ setting('site.site_name') }}
+@endsection
+
 @section('content')
 
     <!-- Page title -->
@@ -8,12 +12,12 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-title-heading text-center">
-                        <h1 class="title">Register</h1>
+                        <h1 class="title">Mot de passe oublié</h1>
                     </div>
                     <div class="bread-crumb text-center">
                         <ul>
-                            <li class="home"><a href="index.html">Home</a></li>
-                            <li>Register</li>
+                            <li class="home"><a href="/">Accueil</a></li>
+                            <li>Mon Compte</li>
                         </ul>
                     </div>
                 </div><!-- /.col-md-12 -->
@@ -51,13 +55,6 @@
                                 <span class="button-login"><button type="submit" name="submit" class="educa-button">VALIDER</button></span>
                             </form>
                             <hr>
-                            {{--<div class="or-using">--}}
-                            {{--<h5>Or Using</h5>--}}
-                            {{--</div>--}}
-                            {{--<div class="social-login clearfix">--}}
-                            {{--<a href="#" class="google"><i class="fa fa-google-plus"></i>Google Account</a>--}}
-                            {{--<a href="#" class="facebook"><i class="fa fa-facebook"></i>Facebook Account</a>--}}
-                            {{--</div>--}}
                             <div class="user-box-footer">
                                 <p>Vous avez déjà un compte ?<br><a href="{{ route('login') }}">Connectez-vous !</a></p>
                             </div>
@@ -67,48 +64,4 @@
             </div>
         </section>
     </main>
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Reset Password</div>
-
-                <div class="panel-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    <form class="form-horizontal" method="POST" action="{{ route('password.email') }}">
-                        {{ csrf_field() }}
-
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
-
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Send Password Reset Link
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 @endsection

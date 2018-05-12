@@ -1,5 +1,9 @@
 @extends('layout.header')
 
+@section('title')
+    Réinitialisation du mot de passe | {{ setting('site.site_name') }}
+@endsection
+
 @section('content')
 
     <!-- Page title -->
@@ -8,12 +12,12 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-title-heading text-center">
-                        <h1 class="title">Register</h1>
+                        <h1 class="title">Réinitialisation du mot de passe</h1>
                     </div>
                     <div class="bread-crumb text-center">
                         <ul>
-                            <li class="home"><a href="index.html">Home</a></li>
-                            <li>Register</li>
+                            <li class="home"><a href="/">Accueil</a></li>
+                            <li>Mon Compte</li>
                         </ul>
                     </div>
                 </div><!-- /.col-md-12 -->

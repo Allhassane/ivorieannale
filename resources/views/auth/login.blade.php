@@ -1,5 +1,9 @@
 @extends('layout.header')
 
+@section('title')
+    Connexion | {{ setting('site.site_name') }}
+@endsection
+
 @section('content')
 
     <!-- Page title -->

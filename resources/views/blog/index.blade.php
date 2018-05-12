@@ -1,5 +1,9 @@
 @extends('layout.header')
 
+@section('title')
+    Actualités | {{ setting('site.site_name') }}
+@endsection
+
 @section('content')
 
     <section class="page-title background2">

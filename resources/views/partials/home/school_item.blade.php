@@ -12,8 +12,12 @@
                     </p>
                     <p></p>
                     <ul class="meta-post style3 clearfix">
-                        <li class="age">Niveau : <span> {{ $data->level }}</span></li>
-                        <li class="student">Kids: <span>15/20</span></li>
+                        <li class="age">
+                            <a href="{{ route('front.by.category', ['bread_id' => $data->id, 'bread' => 'schools', 'slug' => $data->slug]) }}"> Exercies</a>
+                        </li>
+                        <li class="student">
+                            <a href="{{ route('front.by.category', ['bread_id' => $data->id, 'bread' => 'schools', 'slug' => $data->slug]) }}"> Examens</a>
+                        </li>
                     </ul>
 
                 </div>
